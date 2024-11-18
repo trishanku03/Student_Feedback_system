@@ -1,0 +1,347 @@
+.main{
+  height:100vh;
+  width:100%;
+}
+
+.container {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%; /* adjust the width as needed */
+  height: 50vh; /* adjust the height as needed */
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
+
+}
+
+
+video {
+  position: fixed; /* instead of relative, use fixed to make it full screen */
+  top: 0;
+  left: 0;
+  width: 100vw; /* use vw instead of % to make it full screen */
+  height: 100vh; /* use vh instead of % to make it full screen */
+  object-fit: cover;
+  background-color: rgb(0, 0, 0, 0);
+  z-index: 0; /* keep this to put the video behind the header */
+}
+
+.button-group {
+  position: relative;
+  display: inline-block;
+  top: 170%;
+}
+
+
+/* CSS */
+
+  .btn {
+    position: relative;
+    flex-grow: 1; 
+    flex-basis: 0; 
+    background-image: linear-gradient(#017e07, #34bd2f);
+    background-color: #0404047f;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 8px;
+
+  }
+
+
+  .sub-btn {
+    position: relative;
+    flex-grow: 1; 
+    flex-basis: 0; 
+    background-image: linear-gradient(#017e07, #34bd2f);
+    background-color: #0404047f;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  .sub-btn1 {
+    position: relative;
+    flex-grow: 1; 
+    flex-basis: 0; 
+    background-image: linear-gradient(#017e07, #34bd2f);
+    background-color: #0404047f;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 8px;
+
+  }
+
+  body {
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+
+  }
+  
+  /* Add this class to all text boxes and elements you want to center */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  h2{
+    color: #2d2d2d;
+    font-size: 25px;
+
+  }
+
+
+  h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 80%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+ 
+  .message {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    padding: 15px;
+    bottom:0;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  .success {
+    color: green;
+    background-color: #C6F4D6;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .error {
+    color: red;
+    background-color: #F7C6C6;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+
+
+  /* StudentFeedbackSystem.css */
+  .section1 {
+  position:relative;
+  border-style:dotted;
+  top: 130%;
+  background-image: "background.jpg"; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-color:#ffffffdf;
+  background-color: rgb(255, 255, 255);
+    }
+
+  .section2 {
+      position:relative;
+      border-style:dotted;
+      top: -160px;
+      max-height: 300px; /* adjust the height to your needs */
+      background-image: "background.jpg"; 
+      background-size: cover;
+      border-color:#ffffffdf;
+      background-repeat: no-repeat;
+      background-color: rgb(255, 255, 255);
+         }
+
+    .section3 {
+      position:relative;
+      border-style:dotted;
+      border-color:#ffffffdf;
+      top: -220px;
+      max-height: 600px; /* adjust the height to your needs */
+
+      background-image: "background.jpg"; 
+      background-size: cover;
+      background-repeat: no-repeat; 
+      background-color: rgb(255, 255, 255);
+
+    }        
+    
+    
+            
+.close-btn {
+  position: relative;
+  top: 0%;
+  left: 100%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #800505;
+}
+
+
+
+.add-teacher-button {
+  flex-grow: 1; /* take up the available space */
+  display: block;
+  max-width: 300px; /* maximum width */
+  max-height: 200px; /* maximum height */
+  margin: 0 auto;
+  border-radius: 6px;
+
+
+}
+
+.add-student-button {
+flex-grow: 1; /* take up the available space */
+  max-width: 300px; /* maximum width */
+  max-height: 200px; /* maximum height */
+  margin: 0 auto;
+  display: block;
+  border-radius: 6px;
+
+}
+
+.get-teacher-button {
+flex-grow: 1; /* take up the available space */
+max-width: 300px; /* maximum width */
+max-height: 200px; /* maximum height */
+margin: 0 auto;
+display: block;
+border-radius: 6px;
+
+}
+
+.get-password-button {
+flex-grow: 1; /* take up the available space */
+  max-width: 300px; /* maximum width */
+  max-height: 200px; /* maximum height */
+  margin: 0 auto;
+  display: block;
+  border-radius: 6px;
+
+
+}
+
+.get-review-button {
+  flex-grow: 1; /* take up the available space */
+  max-width: 300px; /* maximum width */
+  max-height: 200px; /* maximum height */
+  margin: 0 auto;
+  display: block;
+  border-radius: 6px;
+
+
+}
+
+.add-review-button {
+  flex-grow: 1; /* take up the available space */
+  max-width: 300px; /* maximum width */
+  max-height: 200px; /* maximum height */
+  margin: 0 auto;
+  display: block;
+  border-radius: 6px;
+
+
+}
+
+.remove-teacher-button {
+flex-grow: 1; /* take up the available space */
+  max-width: 300px; /* maximum width */
+  max-height: 200px; /* maximum height */
+  margin: 0 auto;
+  display: block;
+  border-radius: 6px;
+
+
+}
+
+.remove-student-button {
+  flex-grow: 1; /* take up the available space */
+  max-width: 300px; /* maximum width */
+  max-height: 200px; /* maximum height */
+  margin: 0 auto;
+  display: block;
+  border-radius: 6px;
+
+}
+
+.add-recruiter-button {
+    flex-grow: 1; /* take up the available space */
+    max-width: 300px; /* maximum width */
+    max-height: 200px; /* maximum height */
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+
+  
+  }
+
+.remove-recruiter-button {
+    flex-grow: 1; /* take up the available space */
+    max-width: 300px; /* maximum width */
+    max-height: 200px; /* maximum height */
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+
+    
+    }
+
+.upload-grade-button {
+    flex-grow: 1; /* take up the available space */
+    max-width: 300px; /* maximum width */
+    max-height: 200px; /* maximum height */
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+
+      
+      }
+
+.get-grade-button {
+    flex-grow: 1; /* take up the available space */
+    max-width: 300px; /* maximum width */
+    max-height: 200px; /* maximum height */
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+
+        
+    }  
+
+
+  
